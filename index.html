@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kiran Acharya - Software Developer specializing in Java, Spring Boot, and Android Development. View my portfolio and projects.">
+    <meta name="keywords" content="Software Developer, Java, Spring Boot, Kotlin, Android, Backend Developer">
+    <meta name="author" content="Kiran Acharya">
+    <title>Kiran Acharya | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=General+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="4" fill="currentColor"/>
+            <path d="M10 0V2M10 18V20M20 10H18M2 10H0M17.07 17.07L15.66 15.66M4.34 4.34L2.93 2.93M17.07 2.93L15.66 4.34M4.34 15.66L2.93 17.07" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">KIRAN<span class="accent">.</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label">Software Developer</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Kiran Acharya</span>
+                </h1>
+                <p class="hero-subtitle typing-text" id="typingText"></p>
+                <p class="hero-description">
+                    Final-year Software Engineering student with expertise in building robust backend systems 
+                    and mobile applications. Passionate about clean code, scalable architecture, and solving 
+                    real-world problems through technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="resume.pdf" download class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6 9L10 13M10 13L14 9M10 13V1M1 16V17C1 18.1046 1.89543 19 3 19H17C18.1046 19 19 18.1046 19 17V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/iamkiraan" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kiran-acharya-3b140730b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:betaastra112@gmail.com" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="code-content">
+                            <code>
+                                <span class="code-keyword">public class</span> <span class="code-class">Developer</span> {<br>
+                                &nbsp;&nbsp;<span class="code-keyword">String</span> name = <span class="code-string">"Kiran"</span>;<br>
+                                &nbsp;&nbsp;<span class="code-keyword">String[]</span> skills = {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Java"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Spring Boot"</span>,<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Kotlin"</span><br>
+                                &nbsp;&nbsp;};<br>
+                                }
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Building Solutions, One Line at a Time</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a final-semester Software Engineering student at Nepal College of Information Technology (NCIT) 
+                        with a CGPA of 3.69/4.0. My journey in software development is driven by a passion for creating 
+                        efficient, scalable solutions that make a real impact.
+                    </p>
+                    <p class="about-text">
+                        With strong expertise in <strong>Core Java</strong>, <strong>Spring Boot</strong>, and 
+                        <strong>Android Development</strong>, I've built everything from backend CRUD applications to 
+                        full-stack mobile solutions. I'm particularly interested in backend architecture, RESTful API 
+                        design, and clean code principles.
+                    </p>
+                    <p class="about-text">
+                        Currently seeking a <strong>Java Internship</strong> where I can contribute to meaningful projects, 
+                        learn from experienced developers, and continue growing my skills in enterprise-level application 
+                        development.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">GitHub Repos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3.69</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Major Projects</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎯</div>
+                        <h3>Career Goals</h3>
+                        <p>Aspiring to become a proficient full-stack developer with deep expertise in Java ecosystem and cloud technologies.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💡</div>
+                        <h3>Core Strengths</h3>
+                        <p>Object-Oriented Programming, Clean Architecture, RESTful API Design, Database Modeling, Problem Solving.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🚀</div>
+                        <h3>Quick Learner</h3>
+                        <p>Completed intensive training in Kotlin and Firebase. Active participant in hackathons and coding challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="4" y="4" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>Core Java, OOP, Collections, Streams, Multithreading</p>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 12V20L26 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Spring Boot</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                        <span class="skill-percent">Intermediate</span>
+                    </div>
+                    <p>REST APIs, Spring MVC, Spring Data JPA, Security Basics</p>
+                </div>
+
+                <div class="skill-card" data-category="mobile">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="10" y="4" width="20" height="32" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="32" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Kotlin</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>Android Development, Jetpack Compose, Coroutines, MVVM</p>
+                </div>
+
+                <div class="skill-card" data-category="mobile">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M8 8L20 4L32 8V20C32 28 20 36 20 36C20 36 8 28 8 20V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Android Studio</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>UI/UX Design, Material Design, Testing, Debugging</p>
+                </div>
+
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <ellipse cx="20" cy="12" rx="12" ry="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12V28C8 31.3137 13.3726 34 20 34C26.6274 34 32 31.3137 32 28V12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 20C8 23.3137 13.3726 26 20 26C26.6274 26 32 23.3137 32 20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">Intermediate</span>
+                    </div>
+                    <p>Database Design, SQL Queries, Joins, Transactions</p>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 4L4 12V28L20 36L36 28V12L20 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 12L20 20M20 20L36 12M20 20V36" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>REST APIs</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>API Design, HTTP Methods, JSON, Authentication, Retrofit</p>
+                </div>
+
+                <div class="skill-card" data-category="backend mobile">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M12 8L20 4L28 8L32 16L28 32L20 36L12 32L8 16L12 8Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Firebase</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">Intermediate</span>
+                    </div>
+                    <p>Authentication, Firestore, Realtime Database, Cloud Storage</p>
+                </div>
+
+                <div class="skill-card" data-category="database">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 8V20H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                        <span class="skill-percent">Intermediate</span>
+                    </div>
+                    <p>Relational Database Management, Optimization, Indexing</p>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 4L8 10L10 24L20 36L30 24L32 10L20 4Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>Version Control, Branching, Pull Requests, Collaboration</p>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="6" y="8" width="28" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 14H34M14 20H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>IntelliJ IDEA</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>Professional IDE, Debugging, Refactoring, Plugins</p>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 18L18 24L28 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Linux</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">Intermediate</span>
+                    </div>
+                    <p>Command Line, Shell Scripting, System Administration</p>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 10H30V30H10V10Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 16L24 24M24 16L16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Data Structures</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">Advanced</span>
+                    </div>
+                    <p>Arrays, LinkedLists, Trees, Graphs, Hash Tables, Algorithms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="10" y="15" width="60" height="50" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 25H70M25 15V65M55 15V65" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <h3>Hospital Management System</h3>
+                        <p>A comprehensive hospital management system featuring patient records, appointment scheduling, and inventory management. Built with Spring Boot backend and PostgreSQL database.</p>
+                        <ul class="project-features">
+                            <li>RESTful API architecture</li>
+                            <li>JWT authentication</li>
+                            <li>Role-based access control</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/iamkiraan" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>In Development</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="25" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 25V40L50 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <h3>Real-time Quiz Application</h3>
+                        <p>An interactive quiz application with real-time multiplayer functionality using WebSockets. Features live leaderboards, timed questions, and instant result updates.</p>
+                        <ul class="project-features">
+                            <li>WebSocket integration for real-time updates</li>
+                            <li>Firebase authentication and database</li>
+                            <li>Material Design 3 UI</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/iamkiraan" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>In Development</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <path d="M40 15L25 30L30 45L40 50L50 45L55 30L40 15Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="40" cy="35" r="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Maps API</span>
+                        </div>
+                        <h3>Blood Donation Platform</h3>
+                        <p>A mobile and web platform connecting blood donors with recipients. Features real-time donor availability, emergency requests, blood bank locations, and donation event organization.</p>
+                        <ul class="project-features">
+                            <li>Real-time geolocation-based donor search</li>
+                            <li>Push notifications for urgent requests</li>
+                            <li>Donation history tracking</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/janakkhadka/Blood_Sewa_Minor_Project_6th_Semester" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Case Study</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="20" y="20" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 35L40 45L60 25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Room DB</span>
+                            <span class="tag">MVVM</span>
+                        </div>
+                        <h3>EasySave Money Tracker</h3>
+                        <p>A personal finance management app for tracking income, expenses, and savings goals. Features data visualization, budget planning, and financial insights.</p>
+                        <ul class="project-features">
+                            <li>Local database with Room</li>
+                            <li>Interactive charts and analytics</li>
+                            <li>Category-based expense tracking</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/iamkiraan/EasySave" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>In Development</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <path d="M40 20L20 35L25 55L40 65L55 55L60 35L40 20Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 40H50M40 30V50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Hackathon</span>
+                            <span class="tag">Team Project</span>
+                        </div>
+                        <h3>Goreto - NCIT Hackfest 2024</h3>
+                        <p>Team Beta Astra's solution for NCIT Hackfest 2024. An innovative mobile application addressing real-world challenges with modern architecture and clean code practices.</p>
+                        <ul class="project-features">
+                            <li>24-hour hackathon project</li>
+                            <li>Team collaboration using Git</li>
+                            <li>Agile development methodology</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/iamkiraan/Team-Beta-Astra---NCIT-Hackfest-2024" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Presentation</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect x="15" y="15" width="50" height="50" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M28 35L40 47L52 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Dynamic Programming</span>
+                        </div>
+                        <h3>Multistage Graph Algorithm</h3>
+                        <p>Implementation of a dynamic programming solution for multistage graph optimization. Demonstrates clean code principles and efficient algorithm design.</p>
+                        <ul class="project-features">
+                            <li>Optimized DP implementation</li>
+                            <li>Modular and maintainable code</li>
+                            <li>Comprehensive unit testing</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/iamkiraan" class="project-link" target="_blank" rel="noopener">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="#" class="project-link disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 3.33334V16.6667M10 16.6667L16.6667 10M10 16.6667L3.33334 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Documentation</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Journey</span>
+                <h2 class="section-title">Education & Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2026 (Expected)</div>
+                        <h3>Bachelor of Software Engineering</h3>
+                        <h4>Nepal College of Information Technology (NCIT)</h4>
+                        <p class="timeline-gpa">CGPA: 3.69 / 4.0</p>
+                        <p class="timeline-description">
+                            Comprehensive software engineering curriculum covering data structures, algorithms, 
+                            database systems, software architecture, and modern development practices.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span>Dean's List</span>
+                            <span>Academic Excellence</span>
+                            <span>Active GitHub Contributor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>NCIT Hackfest 2024 Participant</h3>
+                        <h4>Team Beta Astra</h4>
+                        <p class="timeline-description">
+                            Collaborated with a team to develop "Goreto," an innovative mobile application 
+                            addressing real-world challenges. Demonstrated problem-solving skills, teamwork, 
+                            and rapid prototyping abilities in a competitive environment.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span>Team Leadership</span>
+                            <span>Agile Development</span>
+                            <span>24hr Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>Intensive Kotlin & Firebase Training</h3>
+                        <h4>Professional Development</h4>
+                        <p class="timeline-description">
+                            Completed a rigorous 2-week training program focused on modern Android development 
+                            with Kotlin and Firebase ecosystem. Gained hands-on experience with cloud services, 
+                            real-time databases, and authentication systems.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span>Jetpack Compose</span>
+                            <span>Firebase Suite</span>
+                            <span>Clean Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Ongoing</div>
+                        <h3>Open Source Contributions</h3>
+                        <h4>GitHub Community</h4>
+                        <p class="timeline-description">
+                            Active contributor with 30+ repositories covering various technologies and domains. 
+                            Regular participant in code reviews, documentation improvements, and collaborative 
+                            development projects.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span>30+ Repositories</span>
+                            <span>Version Control</span>
+                            <span>Code Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    I'm currently seeking a Java Internship opportunity. If you have an exciting project 
+                    or position, I'd love to hear from you!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:betaastra112@gmail.com">betaastra112@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4741 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4018C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.912 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27097 2.11999 4.17997C2.095 3.90344 2.12787 3.62474 2.21649 3.3616C2.30512 3.09846 2.44756 2.85666 2.63476 2.6516C2.82196 2.44653 3.0498 2.28268 3.30379 2.17052C3.55777 2.05836 3.83233 2.00026 4.10999 1.99997H7.10999C7.5953 1.9952 8.06579 2.16705 8.43376 2.48351C8.80173 2.79996 9.04207 3.23942 9.10999 3.71997C9.23662 4.68004 9.47144 5.6227 9.80999 6.52997C9.94454 6.8879 9.97366 7.27689 9.8939 7.65086C9.81415 8.02482 9.62886 8.36809 9.35999 8.63998L8.08999 9.90997C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0554 17.47 14.19C18.3773 14.5285 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+9779865445343">+977 9865445343</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kalikot, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/iamkiraan" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kiran-acharya-3b140730b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or opportunity..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>KIRAN<span class="accent">.</span></h3>
+                    <p>Software Developer passionate about building innovative solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links-footer">
+                        <a href="https://github.com/iamkiraan" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-1.025-.013-1.862-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531.103 1.531.103.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kiran-acharya-3b140730b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.04 17.043h-2.962v-4.64c0-1.107-.02-2.531-1.543-2.531-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.845v1.3h.039c.397-.75 1.364-1.542 2.808-1.542 3.001 0 3.556 1.975 3.556 4.546v5.239zM4.447 6.194c-.954 0-1.719-.771-1.719-1.72 0-.949.765-1.72 1.719-1.72.949 0 1.72.771 1.72 1.72 0 .949-.771 1.72-1.72 1.72zm1.484 10.849h-2.97V7.5h2.97v9.543zM18.521 0H1.476C.66 0 0 .645 0 1.441v17.118C0 19.355.66 20 1.476 20h17.042c.815 0 1.482-.645 1.482-1.441V1.441C20.003.645 19.336 0 18.521 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:betaastra112@gmail.com" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                <path d="M2.5 6.66669L9.075 11.05C9.34893 11.2328 9.67075 11.3302 10 11.3302C10.3293 11.3302 10.6511 11.2328 10.925 11.05L17.5 6.66669M4.16667 15.8334H15.8333C16.2754 15.8334 16.6993 15.6578 17.0118 15.3452C17.3244 15.0327 17.5 14.6088 17.5 14.1667V5.83335C17.5 5.39133 17.3244 4.96741 17.0118 4.65485C16.6993 4.34229 16.2754 4.16669 15.8333 4.16669H4.16667C3.72464 4.16669 3.30072 4.34229 2.98816 4.65485C2.67559 4.96741 2.5 5.39133 2.5 5.83335V14.1667C2.5 14.6088 2.67559 15.0327 2.98816 15.3452C3.30072 15.6578 3.72464 15.8334 4.16667 15.8334Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kiran Acharya. All rights reserved.</p>
+                <p>Built with passion and precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
