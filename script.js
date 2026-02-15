@@ -201,11 +201,17 @@ skillProgressBars.forEach(bar => {
 });
 
 // =============================================================================
-// CONTACT FORM HANDLING
+// CONTACT FORM HANDLING WITH EMAILJS
 // =============================================================================
 
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
+
+// EmailJS Configuration
+// Sign up at https://www.emailjs.com/ and replace these values
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID'; // e.g., 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID'; // e.g., 'template_xyz789'
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // Already added in HTML head
 
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -226,54 +232,78 @@ contactForm.addEventListener('submit', async (e) => {
     
     // Show loading state
     const submitButton = contactForm.querySelector('.btn-submit');
-    const originalText = submitButton.innerHTML;
-    submitButton.innerHTML = '<span>Sending...</span>';
+    const originalHTML = submitButton.innerHTML;
+    submitButton.innerHTML = `
+        <span>Sending...</span>
+        <svg class="animate-spin" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-dasharray="50" stroke-dashoffset="25"/>
+        </svg>
+    `;
     submitButton.disabled = true;
     
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-        showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-        contactForm.reset();
-        submitButton.innerHTML = originalText;
-        submitButton.disabled = false;
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            formMessage.style.display = 'none';
-        }, 5000);
-    }, 1500);
-    
-    // Example of actual form submission (commented out)
-    /*
     try {
-        const response = await fetch('YOUR_FORM_ENDPOINT', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        });
+        // Send email using EmailJS
+        const response = await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            {
+                from_name: formData.name,
+                from_email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+                to_email: 'betaastra112@gmail.com' // Your email
+            }
+        );
         
-        if (response.ok) {
-            showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
+        if (response.status === 200) {
+            showFormMessage('🎉 Message sent successfully! I\'ll get back to you soon.', 'success');
             contactForm.reset();
-        } else {
-            showFormMessage('Something went wrong. Please try again.', 'error');
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
         }
     } catch (error) {
-        showFormMessage('Something went wrong. Please try again.', 'error');
+        console.error('EmailJS Error:', error);
+        showFormMessage('❌ Oops! Something went wrong. Please try again or email me directly at betaastra112@gmail.com', 'error');
     } finally {
-        submitButton.innerHTML = originalText;
+        submitButton.innerHTML = originalHTML;
         submitButton.disabled = false;
     }
-    */
 });
 
 function showFormMessage(message, type) {
     formMessage.textContent = message;
     formMessage.className = `form-message ${type}`;
     formMessage.style.display = 'block';
+    
+    // Add animation
+    formMessage.style.animation = 'slideInUp 0.3s ease-out';
 }
+
+// Add CSS for spinning animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin {
+        animation: spin 1s linear infinite;
+    }
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(style);
 
 // =============================================================================
 // BACK TO TOP BUTTON
